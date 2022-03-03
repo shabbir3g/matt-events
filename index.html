@@ -17,24 +17,14 @@
                 <div class="search-box">
                     <input type="search" placeholder="Search">
                 </div>
-                <div class="radio-button">
-                    <div class="single-radio">
-                        <label for="friday">Friday 2nd</label>
-                        <input name="time-radio" id="friday" type="radio">
-                    </div>
-                    <div class="single-radio">
-                        <label for="SAT">SAT 3rd</label>
-                        <input name="time-radio" id="SAT" type="radio">
-                    </div>
-                    <div class="single-radio">
-                        <label for="SUN">SUN 4th</label>
-                        <input name="time-radio" id="SUN" type="radio">
-                    </div>
-                    <div class="single-radio">
-                        <label for="ANY">ANY Day</label>
-                        <input name="time-radio" id="ANY" type="radio">
-                    </div>
-                </div>
+
+                <ul class="tabs days">
+                    <li class="active" data-day="any"><a href="#">Any Day</a></li>
+                    <li data-day="20220402"><a href="#">Friday 2nd</a></li>
+                    <li data-day="20220403"><a href="#">Sat 3rd</a></li>
+                    <li data-day="20220404"><a href="#">Sun 4th</a></li>
+                </ul>
+
                 <div class="filter-by">
                     <div class="filter-text">
                         <p>Filter By</p>
@@ -44,7 +34,7 @@
                     </div>
                 </div>
                 <div class="filter-dopdown">
-                    <div class="filter-name">
+                    <div class="tabs filter">
                         <h2>Venue - </h2>
                         <h2>Writer +</h2>
                         <h2>Access +</h2>
