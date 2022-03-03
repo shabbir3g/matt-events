@@ -1,0 +1,309 @@
+/* common style  */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* serach aera  */
+
+.search-area{
+    background-color: #F46F21;
+    padding: 30px 0;
+}
+.search-box input {
+    display: block;
+    width: 100%;
+    background: #F46F21;
+    border-bottom: 2px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.search-box input:focus-visible{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    outline: none
+}
+.search-box input::placeholder {
+    color: #000;
+    opacity: 1;
+}
+.radio-button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.radio-button .single-radio {
+    border: 2px solid #000;
+    width: 100%;
+    text-align: center;
+  
+    
+}
+.radio-button .single-radio label {
+    display: block;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.radio-button .single-radio label:hover{
+    background-color: #fff;
+}
+.radio-button .single-radio input {
+    display: none;
+    overflow: hidden;
+}
+.filter-by {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.filter-icon a{
+    color: #000;
+    text-decoration: none;
+}
+.filter-dopdown{
+    display: flex;
+}
+.filter-name{
+    width: 10%;
+}
+.filter-name h2 {
+    padding: 4px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+.options-name h4 input {
+    position: relative;
+    top: 4px;
+    margin-right: 7px;
+}
+.options-name h4 {
+    padding: 4px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+/* Programs style  */
+.programs-section{
+    background-color: #000;
+    overflow: hidden;
+    padding-top: 50px;
+}
+.programs-container{
+    display: flex;
+    position: relative;
+    left: 200px;
+    padding-bottom: 50px
+}
+
+.programs-list {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    width: 90%;
+    gap: 20px
+}
+
+
+.program-image > img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+.program-image{
+    position: relative;
+}
+.image-over-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-right: 10px;
+}
+.program-conetnt{
+    padding: 20px
+}
+.program-conetnt h2{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+.program-conetnt p{
+    font-size: 15px;
+}
+.meta{
+    margin-top: 20px;
+}
+.meta-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+.meta-info span {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -9px;
+}
+.book-now a {
+    display: block;
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+    border-top: 2px solid #000;
+    color: #000;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    transition-duration: .5s;
+}
+.book-now a:hover{
+    background-color: #fff;
+    color: #000
+}
+.book-now{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-top: 2px solid #000;
+    color: #000;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    transition-duration: .5s;
+}
+
+.programs-time{
+    width: 200px;
+    margin-right: 20px;
+    padding: 30px;
+}
+/* programs layout style */
+
+.programs-container:nth-child(odd) .single-program{
+    background-color: #F46F21;
+    position: relative;
+}
+.programs-container:nth-child(even) .single-program{
+    background-color: #f99b1d;
+    position: relative;
+}
+
+.book-now.odd a{
+    background-color: #F46F21;
+   
+}
+.book-now.even a{
+    background-color: #f99b1d;
+   
+}
+.programs-container:nth-child(even) .programs-time {
+    background-image: linear-gradient(#f99b1d, #f99b1d, #000);
+} 
+.programs-container:nth-child(odd) .programs-time {
+    background-image: linear-gradient(#F46F21, #F46F21, #000);
+  
+} 
+
+/* Guest section style  */
+.guest-creator{
+    background-image: linear-gradient(to bottom, #f99b1d 0%, #f99b1d 50%, #000 50%, #000 100%);
+}
+.guest-creator > h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 46px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.guest-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+.single-guest{
+    background-color: #f46f22;
+}
+.guest-image img{
+    width: 100%;
+}
+.guest-conetnt {
+    padding: 10px;
+}
+.guest-conetnt h2{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* Responsive design  */
+
+@media all and (max-width: 720px) {
+    .radio-button {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .guest-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .programs-container {
+        display: flex;
+        position: inherit;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .programs-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 20px;
+    }
+    .filter-dopdown {
+        display: flex;
+        flex-direction: column;
+    }
+    .programs-time {
+        width: 100%;
+    }
+    .guest-creator > h2 {
+        margin: 0px;
+        padding: 35px;
+        font-size: 20px;
+    }
+    .radio-button .single-radio {
+        margin-bottom: 11px;
+    }
+}
+
