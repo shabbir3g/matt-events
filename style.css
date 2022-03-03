@@ -43,21 +43,21 @@ h1, h2, h3, h4, h5, h6, p{
     color: #000;
     opacity: 1;
 }
-ul.tabs {
+ul.tabs.days {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 20px 0;
     padding: 0;
 }
-ul.tabs li {
+ul.tabs.days  li {
     border: 2px solid #000;
     width: 100%;
     text-align: center;
     list-style: none;
     
 }
-ul.tabs li a {
+ul.tabs.days  li a {
     display: block;
     cursor: pointer;
     padding: 12px;
@@ -67,7 +67,34 @@ ul.tabs li a {
     text-decoration: none;
     color: #000;
 }
-ul.tabs li a:hover{
+ul.tabs.days li a:hover{
+    background-color: #fff;
+}
+
+/* filter design  */
+
+ul.tabs.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0;
+}
+ul.tabs.filter  li {
+    width: 100%;
+    list-style: none;
+}
+ul.tabs.filter  li a {
+    display: block;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+ul.tabs.filter li a:hover{
     background-color: #fff;
 }
 
@@ -293,6 +320,13 @@ ul.tabs li a:hover{
     .filter-dopdown {
         display: flex;
         flex-direction: column;
+    }
+    ul.tabs.filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px 0;
+        padding: 0;
     }
     .programs-time {
         width: 100%;
